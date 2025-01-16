@@ -556,12 +556,16 @@ video {
 
 html {
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .nav-container {
   display: flex;
+  height: 17vh;
   align-items: center;
   justify-content: space-between;
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 1rem;
@@ -569,25 +573,27 @@ html {
 }
 
 .logo {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   font-weight: 600;
 }
 
 .nav-links {
   display: flex;
+  justify-content: space-around;
   gap: 2rem;
 }
 
 .nav-links a {
+  font-size: 1.5rem;
+  line-height: 2rem;
   --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+  color: rgb(24 24 27 / var(--tw-text-opacity));
+  text-underline-offset: 8px;
 }
 
 .nav-links a:hover {
   --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
+  color: rgb(29 78 216 / var(--tw-text-opacity));
+  text-decoration-line: underline;
 }
