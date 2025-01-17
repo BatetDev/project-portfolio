@@ -15,31 +15,49 @@
   </head>
   <body>
     <!-- Desktop Nav -->
-    <nav id="desktop-nav" class="nav-container" aria-label="Primary navigation">
-      <h1 class="logo">Fran Batet</h1>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <h1 class="desktop-nav__logo">Fran Batet</h1>
       <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="desktop-nav__links">
+          <li><a href="#about" class="desktop-nav__link">About</a></li>
+          <li>
+            <a href="#experience" class="desktop-nav__link">Experience</a>
+          </li>
+          <li><a href="#projects" class="desktop-nav__link">Projects</a></li>
+          <li><a href="#contact" class="desktop-nav__link">Contact</a></li>
         </ul>
       </div>
     </nav>
-    <!-- Mobile hamburguer nav -->
-    <div id="hamburguer-nav">
-      <h2 class="logo">Fran Batet</h2>
-      <div class="hamburguer-menu">
-        <div class="hamburguer-icon" onclick="toggleMenu">
+    <!-- Mobile Nav -->
+    <div class="mobile-nav">
+      <h2 class="mobile-nav__logo">Fran Batet</h2>
+      <div class="mobile-nav__menu">
+        <div class="mobile-nav__icon" onclick="toggleMenu">
           <span></span>
           <span></span>
           <span></span>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu">Contact</a></li>
+        <div class="mobile-nav__links">
+          <li>
+            <a href="#about" class="mobile-nav__link" onclick="toggleMenu"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="#experience" class="mobile-nav__link" onclick="toggleMenu"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a href="#projects" class="mobile-nav__link" onclick="toggleMenu"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="mobile-nav__link" onclick="toggleMenu"
+              >Contact</a
+            >
+          </li>
         </div>
       </div>
     </div>

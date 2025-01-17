@@ -2,9 +2,11 @@
 module.exports = {
   content: ["./*.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif']
+    }
   },
   plugins: [],
-};
-
-/* TODO: RESEARCH BEST PRACTICE, extend or @layer */
+},
+}

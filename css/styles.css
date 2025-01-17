@@ -2,27 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @layer base {
   html {
-    font-family: "Inter", sans-serif;
-    scroll-behavior: smooth;
+    @apply scroll-smooth font-inter;
   }
 }
 
 @layer components {
-  .nav-container {
-    @apply flex justify-between items-center px-6 py-4 h-[17vh] bg-slate-200;
+  .desktop-nav {
+    @apply hidden lg:flex justify-between items-center px-6 py-4 h-[17vh] bg-slate-200;
   }
 
-  .logo {
+  .desktop-nav__logo {
     @apply text-2xl font-semibold;
   }
 
-  .nav-links {
+  .desktop-nav__links {
     @apply flex justify-around gap-8;
   }
 
-  .nav-links a {
-    @apply text-2xl text-zinc-900 hover:text-blue-700 hover:underline underline-offset-8;
+  .desktop-nav__link {
+    @apply text-2xl text-zinc-900 hover:text-blue-700 hover:underline underline-offset-8 transition-colors;
+  }
+
+  .mobile-nav {
+    @apply lg:hidden justify-between items-center p-4 flex bg-red-100;
+  }
+
+  .mobile-nav__menu {
+    @apply relative inline-block;
+  }
+
+  .mobile-nav__icon {
+    @apply flex flex-col justify-between h-6 w-7 cursor-pointer;
+  }
+
+  .mobile-nav__icon span {
+    @apply w-full h-[3px] bg-zinc-950 transition-all;
+  }
+
+  .mobile-nav__links {
+    @apply absolute top-full right-0 w-fit max-h-0 overflow-hidden bg-amber-100 transition-all;
   }
 }
