@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @layer base {
   html {
     @apply scroll-smooth font-inter;
@@ -34,7 +30,7 @@
   }
 
   .mobile-nav__menu {
-    @apply relative inline-block;
+    @apply flex flex-col;
   }
 
   .mobile-nav__icon {
@@ -46,6 +42,45 @@
   }
 
   .mobile-nav__links {
-    @apply absolute top-full right-0 w-fit max-h-0 overflow-hidden bg-amber-100 transition-all;
+    @apply absolute top-10 right-0 w-full max-h-0 overflow-hidden bg-amber-100 transition-all;
+  }
+
+  .mobile-nav__link {
+    @apply block p-2.5 text-center text-2xl text-zinc-950 transition-all;
+  }
+
+  .mobile-nav__links li {
+    @apply list-none;
+  }
+
+  .mobile-nav__links.open {
+    @apply max-h-[300px];
+  }
+
+  .mobile-nav__icon.open span:first-child {
+    @apply rotate-45 translate-y-[10px];
+  }
+
+  .mobile-nav__icon.open span:nth-child(2) {
+    @apply opacity-0;
+  }
+
+  .mobile-nav__icon.open span:nth-child(3) {
+    @apply -rotate-45 translate-y-[-10px];
+  }
+
+  /* Ensure the default state of the spans */
+  .mobile-nav__icon span:first-child {
+    @apply transform-none;
+  }
+
+  .mobile-nav__icon span:nth-child(2) {
+    @apply opacity-100;
+  }
+
+  .mobile-nav__icon span:nth-child(3) {
+    @apply transform-none;
   }
 }
+
+/* https://youtu.be/ldwlOzRvYOU?t=1968 */
