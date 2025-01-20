@@ -579,8 +579,8 @@ html {
 }
 
 .desktop-nav__logo {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   font-weight: 600;
 }
 
@@ -625,6 +625,12 @@ html {
 .mobile-nav__menu {
   display: flex;
   flex-direction: column;
+}
+
+.mobile-nav__logo {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
 }
 
 .mobile-nav__icon {
@@ -711,4 +717,4 @@ html {
   transform: none;
 }
 
-/* https://youtu.be/ldwlOzRvYOU?t=1968 */
+/* SECTIONS */

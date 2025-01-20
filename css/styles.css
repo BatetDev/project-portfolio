@@ -14,7 +14,7 @@
   }
 
   .desktop-nav__logo {
-    @apply text-2xl font-semibold;
+    @apply text-3xl font-semibold;
   }
 
   .desktop-nav__links {
@@ -31,6 +31,10 @@
 
   .mobile-nav__menu {
     @apply flex flex-col;
+  }
+
+  .mobile-nav__logo {
+    @apply font-semibold text-2xl;
   }
 
   .mobile-nav__icon {
@@ -81,6 +85,6 @@
   .mobile-nav__icon span:nth-child(3) {
     @apply transform-none;
   }
-}
 
-/* https://youtu.be/ldwlOzRvYOU?t=1968 */
+  /* SECTIONS */
+}

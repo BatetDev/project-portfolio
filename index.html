@@ -29,7 +29,7 @@
       </div>
     </nav>
     <!-- Mobile Nav -->
-    <div class="mobile-nav">
+    <nav class="mobile-nav">
       <h2 class="mobile-nav__logo">Fran Batet</h2>
       <div class="mobile-nav__menu">
         <div class="mobile-nav__icon" onclick="toggleMenu()">
@@ -63,7 +63,39 @@
           </li>
         </ul>
       </div>
-    </div>
-    <main></main>
+    </nav>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="section__pic-container">
+          <img
+            src="https://picsum.photos/400"
+            alt="Fran Batet profile picture"
+          />
+        </div>
+        <div class="section__text">
+          <p class="section__text-p1">Hello, I'm</p>
+          <h1 class="section__text-title">Fran Batet</h1>
+          <p class="section__text-p2">Web Developer</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/resume-example-pdf')"
+            >
+              Download CV
+            </button>
+            <button
+              class="btn btn-color-1"
+              onclick="location.href='./#contact'"
+            >
+              Contact Info
+            </button>
+          </div>
+          <div class="socials__container">
+            <img src="./assets/icons/" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
