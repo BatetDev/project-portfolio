@@ -1,1 +1,2 @@
-"use strict";
+// Initialize Lucide icons
+lucide.createIcons();
