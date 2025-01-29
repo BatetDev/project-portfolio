@@ -14,9 +14,40 @@
     <script src="./js/main.js" defer></script>
     <title>Portfolio Website</title>
   </head>
-  <body>
-    <h1>Project Portfolio</h1>
-    <i data-lucide="rocket"></i>
-    <i data-lucide="smile"></i>
+  <body class="bg-zinc-950 text-zinc-50">
+    <header
+      class="header fixed w-full top-0 left-0 py-16 px-[15%] bg-black/30 backdrop-blur-[10px] flex justify-between items-center z-50"
+    >
+      <a
+        href="#home"
+        class="logo text-5xl font-extrabold cursor-pointer transition-all duration-300 ease-in-out hover:scale-110"
+      >
+        Fran
+        <span
+          class="bg-[linear-gradient(270deg,#f97316_10%,#dc2626_100%)] bg-clip-text text-transparent"
+          >Batet</span
+        >
+      </a>
+
+      <i
+        data-lucide="menu"
+        id="menu-icon"
+        class="w-[3.5rem] h-[3.5rem] hidden"
+      ></i>
+
+      <nav class="navbar flex gap-12" class="nav-link">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <button
+        class="btn gradient-btn bg-[linear-gradient(270deg,#f97316_10%,#dc2626_100%)]"
+      >
+        Contact Me
+      </button>
+    </header>
   </body>
 </html>
