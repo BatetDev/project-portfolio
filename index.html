@@ -51,11 +51,23 @@
     </header>
 
     <!-- Home Section -->
-    <section class="home" id="home">
-      <div class="home-content">
-        <h1>Hi, It's <span>Fran</span></h1>
-        <h3>I'm a <span>Web Developer</span></h3>
-        <p>
+    <section class="home flex justify-center items-center gap-60" id="home">
+      <div class="home-content flex flex-col items-end text-right">
+        <h1 class="text-[10rem] font-bold mt-6 leading-none">
+          Hi, It's
+          <span
+            class="bg-[linear-gradient(270deg,#f97316_10%,#dc2626_100%)] bg-clip-text text-transparent"
+            >Fran</span
+          >
+        </h1>
+        <h3 class="m-0 mt-4 text-[4rem]">
+          I'm a
+          <span
+            class="bg-[linear-gradient(270deg,#f97316_10%,#dc2626_100%)] bg-clip-text text-transparent"
+            >Web Developer</span
+          >
+        </h3>
+        <p class="text-2xl font-medium leading-[1.8]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora at,
           ipsa doloremque quod necessitatibus culpa nesciunt ea sequi corporis
           natus autem amet iure beatae dolor dolore ad voluptates impedit magnam
@@ -63,15 +75,18 @@
           asperiores necessitatibus repellat eligendi minus dolorum, atque iure
           voluptate numquam ducimus!
         </p>
-        <div class="social-icons">
-          <a href="#">
-            <i data-lucide="github" class="w-[3.5rem] h-[3.5rem]"></i>
+        <div class="social-icons flex gap-8">
+          <a
+            href="#"
+            class="inline-flex items-center justify-center bg-transparent border border-orange-500 text-orange-500 rounded-full p-4"
+          >
+            <i data-lucide="github" class="social-icon"></i>
           </a>
           <a href="#">
-            <i data-lucide="linkedin" class="w-[3.5rem] h-[3.5rem]"></i>
+            <i data-lucide="linkedin" class="social-icon"></i>
           </a>
           <a href="#">
-            <i data-lucide="twitter" class="w-[3.5rem] h-[3.5rem]"></i>
+            <i data-lucide="twitter" class="social-icon"></i>
           </a>
         </div>
 
@@ -82,7 +97,11 @@
       </div>
 
       <div class="home-img">
-        <img src="/002-project-portfolio/assets/images/image.jpg" alt="" />
+        <img
+          src="/002-project-portfolio/assets/images/image.jpg"
+          alt=""
+          class="w-[32vw] rounded-full shadow-[0_0_25px_#fb923c] transition-all duration-400 ease-in-out hover:shadow-[0_0_25px_#fb923c,0_0_50px_#fb923c,0_0_100px_#fb923c]"
+        />
       </div>
     </section>
   </body>

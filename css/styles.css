@@ -4,9 +4,11 @@
 
 @layer base {
   html {
-    font-size: 60%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+    @apply text-[60%] overflow-x-hidden scroll-smooth;
+  }
+
+  section {
+    @apply min-h-screen py-40 px-[15%];
   }
 }
 
@@ -17,5 +19,9 @@
 
   .btn {
     @apply font-medium text-[1.8rem] py-4 px-8 rounded-[3rem] tracking-wider cursor-pointer transition-all duration-300 ease-in-out text-nowrap hover:scale-105;
+  }
+
+  .social-icon {
+    @apply w-12 h-12 text-orange-500;
   }
 }
