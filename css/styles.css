@@ -10,6 +10,18 @@
   section {
     @apply min-h-screen py-40 px-[15%];
   }
+
+  ::-webkit-scrollbar {
+    @apply w-[20px];
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-orange-600;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-zinc-950;
+  }
 }
 
 @layer components {
