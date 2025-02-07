@@ -80,4 +80,9 @@
   .project-card p {
     @apply text-[1.6rem];
   }
+
+  .contact form .input-box input,
+  .contact form textarea {
+    @apply w-full p-10 text-[1.8rem] text-zinc-300 bg-zinc-950 border-2 border-orange-500 rounded-[2rem] m-0 my-6 resize-none;
+  }
 }
