@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Poppins', 'sans-serif'],
+        orbitron: ['Orbitron', 'sans-serif'],
+        robotoMono: ['Roboto Mono', 'monospace'],
       },
     },
   },

@@ -22,10 +22,6 @@
   ::-webkit-scrollbar-track {
     @apply bg-zinc-950;
   }
-
-  .heading {
-    @apply text-[7rem] text-center text-white m-0 my-20;
-  }
 }
 
 @layer components {
@@ -92,8 +88,12 @@
 }
 
 @layer utilities {
+  .heading {
+    @apply font-orbitron font-semibold text-[7rem] text-center text-white tracking-wide m-0 my-20;
+  }
+
   /* When the navbar is visible (on toggle) */
   .navbar.visible {
-    @apply flex flex-col items-center bg-[rgba0,0,0,0.8] absolute top-12 left-0 w-full h-screen z-40 justify-center gap-8 backdrop-blur visible opacity-100;
+    @apply flex flex-col items-center bg-[rgba0,0,0,0.8] absolute top-12 left-0 w-full h-screen z-40 justify-center gap-8 backdrop-blur opacity-100;
   }
 }

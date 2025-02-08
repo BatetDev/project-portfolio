@@ -154,7 +154,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: Poppins, sans-serif;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -580,16 +580,6 @@ section {
 ::-webkit-scrollbar-track {
   --tw-bg-opacity: 1;
   background-color: rgb(9 9 11 / var(--tw-bg-opacity));
-}
-
-.heading {
-  margin: 0px;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  text-align: center;
-  font-size: 7rem;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .nav-link {
@@ -1077,11 +1067,6 @@ section {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.text-gray-50 {
-  --tw-text-opacity: 1;
-  color: rgb(249 250 251 / var(--tw-text-opacity));
-}
-
 .text-orange-500 {
   --tw-text-opacity: 1;
   color: rgb(249 115 22 / var(--tw-text-opacity));
@@ -1122,25 +1107,38 @@ section {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.heading {
+  margin: 0px;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  font-family: Orbitron, sans-serif;
+  font-size: 7rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 /* When the navbar is visible (on toggle) */
 
 .navbar.visible {
+  position: absolute;
+  top: 3rem;
+  left: 0px;
+  z-index: 40;
   display: flex;
+  height: 100vh;
+  width: 100%;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.8);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 40;
   justify-content: center;
   gap: 2rem;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  visibility: visible;
+  background-color: rgba0,0,0,0.8;
   opacity: 1;
+  --tw-backdrop-blur: blur(8px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .hover\:-translate-y-1:hover {
@@ -1151,12 +1149,6 @@ section {
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:scale-110:hover {
-  --tw-scale-x: 1.1;
-  --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
