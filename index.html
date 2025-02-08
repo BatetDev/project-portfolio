@@ -29,25 +29,24 @@
         >
       </a>
 
+      <!-- Hamburger Menu Icon (Visible on smaller screens) -->
       <i
         data-lucide="menu"
         id="menu-icon"
-        class="w-[3.5rem] h-[3.5rem] hidden"
+        class="w-[3.5rem] h-[3.5rem] lg:hidden cursor-pointer z-50"
       ></i>
 
-      <nav class="navbar flex gap-14" class="nav-link">
+      <!-- Navigation Bar (Hidden on smaller screens, visible on lg and above) -->
+      <nav
+        class="navbar hidden lg:absolute gap-14 transition-all duration-300 ease-in-out"
+        id="navbar"
+      >
         <a href="#home" class="nav-link">Home</a>
         <a href="#about" class="nav-link">About</a>
         <a href="#services" class="nav-link">Services</a>
         <a href="#projects" class="nav-link">Projects</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
-
-      <button
-        class="btn gradient-btn text-gray-50 bg-[linear-gradient(270deg,#f97316_10%,#dc2626_100%)]"
-      >
-        Contact Me
-      </button>
     </header>
 
     <!-- Home Section -->
@@ -313,8 +312,9 @@
       </form>
     </section>
 
-    <footer class="footer">
-      <div class="social-icons flex gap-8">
+    <!-- Footer -->
+    <footer class="footer bg-zinc-900 px-0 py-12 flex flex-col gap-8">
+      <div class="social-icons flex gap-8 justify-center">
         <a
           href="#"
           class="inline-flex items-center justify-center bg-transparent border-2 border-orange-500 text-orange-500 rounded-full p-4 transition-all duration-300 ease-in-out hover:scale-105 hover:text-gray-50 hover:bg-orange-500 hover:-translate-y-1 hover:shadow-[0_0_25px_#fb923c]"
@@ -329,7 +329,7 @@
         </a>
       </div>
 
-      <ul class="list">
+      <ul class="list text-[1.8rem] flex justify-center gap-5">
         <li>
           <a href="#">FAQ</a>
         </li>
@@ -347,7 +347,7 @@
         </li>
       </ul>
 
-      <p class="copyright">
+      <p class="copyright text-center text-base">
         © 2025 - present Fran Batet | All rights reserved.
       </p>
     </footer>
