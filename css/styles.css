@@ -7,6 +7,17 @@
     @apply text-[60%] overflow-x-hidden scroll-smooth;
   }
 
+  body {
+    @apply font-robotoMono;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-orbitron;
+  }
+
   section {
     @apply min-h-screen py-40 px-[15%];
   }
