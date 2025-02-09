@@ -8,14 +8,14 @@
   }
 
   body {
-    @apply font-robotoMono;
+    @apply font-robotoMono font-medium;
   }
 
   h1,
   h2,
   h3,
   h4 {
-    @apply font-orbitron;
+    @apply font-orbitron font-bold;
   }
 
   section {
@@ -44,8 +44,12 @@
     @apply bg-orange-500 text-zinc-950 inline-block font-semibold text-[1.8rem] py-4 px-8 rounded-[3rem] border-2 border-transparent tracking-wider cursor-pointer transition-all duration-300 ease-in-out text-nowrap shadow-[0_0_25px_#fb923c] hover:scale-105 hover:shadow-[0_0_25px_#fb923c,0_0_50px_#fb923c];
   }
 
+  .btn-primary {
+    @apply bg-zinc-950 text-orange-500 border-orange-500 hover:bg-orange-500 hover:text-zinc-950;
+  }
+
   .social-icon {
-    @apply w-12 h-auto;
+    @apply inline-flex items-center justify-center bg-transparent border-2 border-orange-500 text-orange-500 rounded-full p-5 transition-all duration-300 ease-in-out hover:scale-105 hover:text-gray-50 hover:bg-orange-500 hover:-translate-y-1 hover:shadow-[0_0_25px_#fb923c];
   }
 
   .service-box {
