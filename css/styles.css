@@ -107,4 +107,8 @@
   .navbar.visible {
     @apply flex flex-col items-center bg-[rgba0,0,0,0.8] absolute top-12 left-0 w-full h-screen z-40 justify-center gap-8 backdrop-blur opacity-100;
   }
+
+  .text-gradient {
+    @apply bg-[linear-gradient(270deg,#f97316_10%,#dc2626_100%)] bg-clip-text text-transparent;
+  }
 }
