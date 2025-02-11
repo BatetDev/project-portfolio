@@ -18,11 +18,11 @@
   </head>
   <body class="bg-zinc-950 text-zinc-50">
     <header
-      class="header fixed w-full top-0 left-0 py-16 px-[15%] bg-black/30 backdrop-blur-[10px] flex justify-between items-center gap-4 z-50"
+      class="header fixed w-full -top-0.5 py-6 px-[5%] bg-black/30 backdrop-blur-[10px] flex justify-between items-center z-50"
     >
       <a
         href="#home"
-        class="logo text-5xl font-extrabold font-orbitron cursor-pointer transition-all duration-300 ease-in-out hover:scale-105"
+        class="logo text-[clamp(1.5rem,7vw,3rem)] font-extrabold font-orbitron tracking-wide cursor-pointer transition-all duration-300 ease-in-out hover:scale-105"
       >
         Fran
         <span class="text-gradient">Batet</span>
@@ -32,7 +32,7 @@
       <i
         data-lucide="menu"
         id="menu-icon"
-        class="w-[3.5rem] h-[3.5rem] lg:hidden cursor-pointer z-50"
+        class="w-10 h-10 lg:hidden cursor-pointer z-50"
       ></i>
 
       <!-- Navigation Bar (Hidden on smaller screens, visible on lg and above) -->
@@ -49,8 +49,13 @@
     </header>
 
     <!-- Home Section -->
-    <section class="home flex justify-center items-center gap-60" id="home">
-      <div class="home-content flex flex-col items-end text-right gap-6">
+    <section
+      class="home flex flex-col justify-center items-center mt-4"
+      id="home"
+    >
+      <div
+        class="home-content flex flex-col flex-1 items-end text-right gap-6 border-2 border-purple-400"
+      >
         <h1 class="text-[10rem] font-bold mt-6 leading-none">
           Hi, It's
           <span class="text-gradient">Fran</span>
@@ -86,11 +91,11 @@
         </div>
       </div>
 
-      <div class="home-img">
+      <div class="home-img w-full border-2 border-red-500">
         <img
           src="./assets/images/image.jpg"
           alt=""
-          class="w-[32vw] h-auto rounded-full hover-glow"
+          class="w-[32vw] h-auto rounded-full hover-glow 0"
         />
       </div>
     </section>

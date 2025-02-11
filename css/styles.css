@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    @apply text-[60%] overflow-x-hidden scroll-smooth;
+    @apply text-base overflow-x-hidden scroll-smooth;
   }
 
   body {
@@ -19,7 +19,7 @@
   }
 
   section {
-    @apply min-h-screen py-40 px-[15%];
+    @apply min-h-screen py-40 px-[5%];
   }
 
   ::-webkit-scrollbar {
