@@ -22,7 +22,7 @@
     >
       <a
         href="#home"
-        class="logo text-[clamp(1.5rem,7vw,3rem)] font-extrabold font-orbitron tracking-wide cursor-pointer transition-all duration-300 ease-in-out hover:scale-105"
+        class="logo text-[clamp(1.6rem,6vw,3.2rem)] font-extrabold font-orbitron tracking-wide cursor-pointer transition-all duration-300 ease-in-out hover:scale-105"
       >
         Fran
         <span class="text-gradient">Batet</span>
@@ -32,12 +32,12 @@
       <i
         data-lucide="menu"
         id="menu-icon"
-        class="w-10 h-10 lg:hidden cursor-pointer z-50"
+        class="w-12 h-12 lg:hidden cursor-pointer z-50"
       ></i>
 
       <!-- Navigation Bar (Hidden on smaller screens, visible on lg and above) -->
       <nav
-        class="navbar hidden lg:absolute gap-14 transition-all duration-300 ease-in-out"
+        class="navbar hidden lg:absolute gap-16 transition-all duration-300 ease-in-out"
         id="navbar"
       >
         <a href="#home" class="nav-link">Home</a>
@@ -50,17 +50,28 @@
 
     <!-- Home Section -->
     <section
-      class="home flex flex-col justify-center items-center mt-4"
+      class="home flex flex-col justify-center items-center py-24"
       id="home"
     >
       <div
-        class="home-content flex flex-col flex-1 items-end text-right gap-6 border-2 border-purple-400"
+        class="home-content flex flex-col justify-center items-center text-center gap-4 border-2 border-purple-400"
       >
-        <h1 class="text-[10rem] font-bold mt-6 leading-none">
+        <div class="home-img w-full border-2 border-red-500">
+          <img
+            src="./assets/images/image.jpg"
+            alt=""
+            class="w-[50vw] mx-auto h-auto rounded-full hover-glow 0"
+          />
+        </div>
+        <h1
+          class="text-[clamp(2rem,10vw,4rem)] font-extrabold leading-tight tracking-wide"
+        >
           Hi, It's
           <span class="text-gradient">Fran</span>
         </h1>
-        <h3 class="m-0 mt-4 text-[4rem]">
+        <h3
+          class="m-0 mt-4 text-[clamp(2rem,10vw,4rem)] font-extrabold leading-tight tracking-wide"
+        >
           I'm a
           <span class="text-gradient">Web Developer</span>
         </h3>
@@ -89,14 +100,6 @@
           <a href="#" class="btn">Hire</a>
           <a href="#contact" class="btn btn-primary">Contact</a>
         </div>
-      </div>
-
-      <div class="home-img w-full border-2 border-red-500">
-        <img
-          src="./assets/images/image.jpg"
-          alt=""
-          class="w-[32vw] h-auto rounded-full hover-glow 0"
-        />
       </div>
     </section>
 

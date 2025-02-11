@@ -576,8 +576,6 @@ h1,
 
 section {
   min-height: 100vh;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -858,36 +856,8 @@ section {
   position: fixed;
 }
 
-.left-0 {
-  left: 0px;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.-top-1 {
-  top: -0.25rem;
-}
-
-.-left-0\.5 {
-  left: -0.125rem;
-}
-
 .-top-0\.5 {
   top: -0.125rem;
-}
-
-.-right-0\.5 {
-  right: -0.125rem;
-}
-
-.-left-1 {
-  left: -0.25rem;
-}
-
-.-right-1 {
-  right: -0.25rem;
 }
 
 .z-50 {
@@ -896,6 +866,11 @@ section {
 
 .m-0 {
   margin: 0px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .my-20 {
@@ -911,10 +886,6 @@ section {
   margin-top: 1rem;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
 .flex {
   display: flex;
 }
@@ -927,8 +898,8 @@ section {
   display: none;
 }
 
-.h-\[3\.5rem\] {
-  height: 3.5rem;
+.h-10 {
+  height: 2.5rem;
 }
 
 .h-auto {
@@ -939,40 +910,32 @@ section {
   height: 3rem;
 }
 
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-8 {
-  height: 2rem;
-}
-
-.w-\[3\.5rem\] {
-  width: 3.5rem;
+.w-10 {
+  width: 2.5rem;
 }
 
 .w-\[32vw\] {
   width: 32vw;
 }
 
+.w-\[50vw\] {
+  width: 50vw;
+}
+
 .w-full {
   width: 100%;
 }
 
+.w-\[60vw\] {
+  width: 60vw;
+}
+
+.w-\[55vw\] {
+  width: 55vw;
+}
+
 .w-12 {
   width: 3rem;
-}
-
-.w-10 {
-  width: 2.5rem;
-}
-
-.w-8 {
-  width: 2rem;
-}
-
-.flex-1 {
-  flex: 1 1 0%;
 }
 
 .cursor-pointer {
@@ -985,10 +948,6 @@ section {
 
 .flex-col {
   flex-direction: column;
-}
-
-.items-end {
-  align-items: flex-end;
 }
 
 .items-center {
@@ -1011,8 +970,8 @@ section {
   gap: 3rem;
 }
 
-.gap-14 {
-  gap: 3.5rem;
+.gap-16 {
+  gap: 4rem;
 }
 
 .gap-4 {
@@ -1082,14 +1041,9 @@ section {
   padding-bottom: 3rem;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .py-6 {
@@ -1105,10 +1059,6 @@ section {
   text-align: center;
 }
 
-.text-right {
-  text-align: right;
-}
-
 .font-orbitron {
   font-family: Orbitron, sans-serif;
 }
@@ -1118,25 +1068,20 @@ section {
   line-height: 2rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
 .text-\[1\.8rem\] {
   font-size: 1.8rem;
 }
 
-.text-\[10rem\] {
-  font-size: 10rem;
-}
-
-.text-\[4rem\] {
-  font-size: 4rem;
-}
-
 .text-\[7rem\] {
   font-size: 7rem;
+}
+
+.text-\[clamp\(1\.5rem\2c 7vw\2c 3rem\)\] {
+  font-size: clamp(1.5rem,7vw,3rem);
+}
+
+.text-\[clamp\(2rem\2c 10vw\2c 4rem\)\] {
+  font-size: clamp(2rem,10vw,4rem);
 }
 
 .text-base {
@@ -1144,33 +1089,8 @@ section {
   line-height: 1.5rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-\[4vw\] {
-  font-size: 4vw;
-}
-
-.text-\[6vw\] {
-  font-size: 6vw;
-}
-
 .text-\[clamp\(1\.6rem\2c 6vw\2c 3\.2rem\)\] {
   font-size: clamp(1.6rem,6vw,3.2rem);
-}
-
-.text-\[clamp\(1\.6rem\2c 8vw\2c 3\.2rem\)\] {
-  font-size: clamp(1.6rem,8vw,3.2rem);
-}
-
-.text-\[clamp\(1\.5rem\2c 8vw\2c 3rem\)\] {
-  font-size: clamp(1.5rem,8vw,3rem);
-}
-
-.text-\[clamp\(1\.5rem\2c 7vw\2c 3rem\)\] {
-  font-size: clamp(1.5rem,7vw,3rem);
 }
 
 .font-bold {
@@ -1185,16 +1105,12 @@ section {
   font-weight: 500;
 }
 
-.font-black {
-  font-weight: 900;
-}
-
 .leading-\[1\.8\] {
   line-height: 1.8;
 }
 
-.leading-none {
-  line-height: 1;
+.leading-tight {
+  line-height: 1.25;
 }
 
 .tracking-wide {
@@ -1273,8 +1189,8 @@ section {
 }
 
 .hover-glow {
-  --tw-shadow: 0 0 25px #fb923c;
-  --tw-shadow-colored: 0 0 25px var(--tw-shadow-color);
+  --tw-shadow: 0 0 16px #fb923c;
+  --tw-shadow-colored: 0 0 16px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   transition-property: all;
   transition-duration: 300ms;
@@ -1282,8 +1198,8 @@ section {
 }
 
 .hover-glow:hover {
-  --tw-shadow: 0 0 25px #fb923c,0 0 50px #fb923c,0 0 100px #fb923c;
-  --tw-shadow-colored: 0 0 25px var(--tw-shadow-color), 0 0 50px var(--tw-shadow-color), 0 0 100px var(--tw-shadow-color);
+  --tw-shadow: 0 0 16px #fb923c,0 0 32px #fb923c,0 0 48px #fb923c;
+  --tw-shadow-colored: 0 0 16px var(--tw-shadow-color), 0 0 32px var(--tw-shadow-color), 0 0 48px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
