@@ -18,7 +18,7 @@
   </head>
   <body class="bg-zinc-950 text-zinc-50">
     <header
-      class="header fixed w-full -top-0.5 py-6 px-[5%] bg-black/30 backdrop-blur-[10px] flex justify-between items-center z-50"
+      class="header fixed w-full -top-0.5 py-5 px-[5%] bg-black/30 backdrop-blur-[10px] flex justify-between items-center z-50"
     >
       <a
         href="#home"
@@ -37,7 +37,7 @@
 
       <!-- Navigation Bar (Hidden on smaller screens, visible on lg and above) -->
       <nav
-        class="navbar hidden lg:absolute gap-16 transition-all duration-300 ease-in-out"
+        class="navbar hidden lg:absolute gap-12 transition-all duration-300 ease-in-out"
         id="navbar"
       >
         <a href="#home" class="nav-link">Home</a>
@@ -49,10 +49,7 @@
     </header>
 
     <!-- Home Section -->
-    <section
-      class="home flex flex-col justify-center items-center py-24"
-      id="home"
-    >
+    <section class="section home flex flex-col items-center mt-24" id="home">
       <div
         class="home-content flex flex-col justify-center items-center text-center gap-4 border-2 border-purple-400"
       >
@@ -60,22 +57,22 @@
           <img
             src="./assets/images/image.jpg"
             alt=""
-            class="w-[50vw] mx-auto h-auto rounded-full hover-glow 0"
+            class="w-[clamp(100px,60vw,300px)] h-auto mx-auto rounded-full hover-glow"
           />
         </div>
         <h1
-          class="text-[clamp(2rem,10vw,4rem)] font-extrabold leading-tight tracking-wide"
+          class="text-[clamp(2rem,8vw,4rem)] font-extrabold leading-tight tracking-wide"
         >
           Hi, It's
           <span class="text-gradient">Fran</span>
         </h1>
         <h3
-          class="m-0 mt-4 text-[clamp(2rem,10vw,4rem)] font-extrabold leading-tight tracking-wide"
+          class="text-[clamp(2rem,6vw,4rem)] font-extrabold leading-tight tracking-wide"
         >
           I'm a
           <span class="text-gradient">Web Developer</span>
         </h3>
-        <p class="text-2xl font-medium leading-[1.8]">
+        <p class="text-lg font-medium leading-normal">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora at,
           ipsa doloremque quod necessitatibus culpa nesciunt ea sequi corporis
           natus autem amet iure beatae dolor dolore ad voluptates impedit magnam

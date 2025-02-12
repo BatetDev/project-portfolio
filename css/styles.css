@@ -18,8 +18,8 @@
     @apply font-orbitron font-bold;
   }
 
-  section {
-    @apply min-h-screen px-[5%];
+  .section {
+    @apply h-screen px-[3%];
   }
 
   ::-webkit-scrollbar {
