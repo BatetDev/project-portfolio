@@ -19,7 +19,7 @@
   }
 
   .section {
-    @apply h-screen px-[3%];
+    @apply min-h-screen px-[5%] py-20 w-full;
   }
 
   ::-webkit-scrollbar {
@@ -41,7 +41,7 @@
   }
 
   .btn {
-    @apply bg-orange-500 text-zinc-950 inline-block font-semibold text-[1.8rem] py-4 px-8 rounded-[3rem] border-2 border-transparent tracking-wider cursor-pointer transition-all duration-300 ease-in-out text-nowrap shadow-[0_0_25px_#fb923c] hover:scale-105 hover:shadow-[0_0_25px_#fb923c,0_0_50px_#fb923c];
+    @apply bg-orange-500 text-zinc-950 inline-block font-semibold text-[1.8rem] py-4 px-8 rounded-[3rem] border-2 border-transparent tracking-wider cursor-pointer transition-all duration-300 ease-in-out text-nowrap shadow-[0_0_20px_#fb923c] hover:scale-[1.03] hover:shadow-[0_0_20px_#fb923c,0_0_40px_#fb923c];
   }
 
   .btn-primary {
@@ -61,7 +61,7 @@
   }
 
   .service-info h4 {
-    @apply text-6xl m-0 my-8 font-extrabold;
+    @apply text-2xl m-0 my-8 font-extrabold;
   }
 
   .service-info p {
@@ -69,7 +69,7 @@
   }
 
   .service-info .icon-large {
-    @apply w-32 h-32;
+    @apply w-20 h-20;
   }
 
   .projects-box {
@@ -104,12 +104,12 @@
 
 @layer utilities {
   .heading {
-    @apply font-orbitron font-semibold text-[7rem] text-center text-white tracking-wide m-0 my-20;
+    @apply font-orbitron font-semibold text-center text-white tracking-wide m-0 my-20;
   }
 
   /* When the navbar is visible (on toggle) */
   .navbar.visible {
-    @apply flex flex-col items-center bg-[rgba0,0,0,0.8] absolute top-12 left-0 w-full h-screen z-40 justify-center gap-8 backdrop-blur opacity-100;
+    @apply flex flex-col items-center bg-black absolute -top-0.5 left-0 w-full h-auto z-40 justify-center gap-8 backdrop-blur;
   }
 
   .text-gradient {
