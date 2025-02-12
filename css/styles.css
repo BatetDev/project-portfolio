@@ -41,7 +41,7 @@
   }
 
   .btn {
-    @apply bg-orange-500 text-zinc-950 inline-block font-semibold text-[1.8rem] py-4 px-8 rounded-[3rem] border-2 border-transparent tracking-wider cursor-pointer transition-all duration-300 ease-in-out text-nowrap shadow-[0_0_20px_#fb923c] hover:scale-[1.03] hover:shadow-[0_0_20px_#fb923c,0_0_40px_#fb923c];
+    @apply w-full sm:w-auto bg-orange-500 text-zinc-950 inline-block font-semibold text-[1.6rem] text-center py-3 px-6 rounded-[3rem] border-2 border-transparent tracking-wide cursor-pointer transition-all duration-300 ease-in-out text-nowrap shadow-[0_0_10px_#fb923c] hover:scale-[1.03] hover:shadow-[0_0_10px_#fb923c,0_0_20px_#fb923c];
   }
 
   .btn-primary {
