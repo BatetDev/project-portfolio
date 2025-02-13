@@ -122,11 +122,6 @@
     @apply font-orbitron font-semibold text-center text-white tracking-wide m-0 my-20;
   }
 
-  /* When the navbar is visible (on toggle) */
-  .navbar.visible {
-    @apply flex flex-col items-center bg-black absolute -top-0.5 left-0 w-full h-auto z-40 justify-center gap-8 backdrop-blur;
-  }
-
   .text-gradient {
     @apply bg-[linear-gradient(270deg,#f97316_10%,#dc2626_100%)] bg-clip-text text-transparent;
   }
