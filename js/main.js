@@ -1,11 +1,19 @@
 // Initialize Lucide icons
 lucide.createIcons();
 
-// Select the hamburger menu icon and the navbar
-const menuIcon = document.getElementById('menu-icon');
-const navbar = document.getElementById('navbar');
+const menuIcon = document.querySelector('#menu-icon');
+const navbar = document.querySelector('.navbar');
 
-// Add click event listener to toggle the 'visible' class
 menuIcon.addEventListener('click', () => {
   navbar.classList.toggle('visible');
+  // Prevent scroll when menu is open
+  document.body.style.overflow = navbar.classList.contains('visible') ? 'hidden' : '';
+});
+
+// Close menu when clicking a link
+navbar.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', () => {
+    navbar.classList.remove('visible');
+    document.body.style.overflow = '';
+  });
 });
