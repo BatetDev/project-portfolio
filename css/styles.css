@@ -52,7 +52,7 @@
   }
 
   .nav-link {
-    @apply text-[1.6rem] font-medium transition-all duration-300 ease-in-out border-b-[3px] border-transparent hover:text-orange-500 hover:border-orange-500;
+    @apply text-[1.6rem] font-medium transition-all duration-300 ease-in-out border-b-[3px] leading-relaxed tracking-wide uppercase  border-transparent hover:text-orange-500 hover:border-orange-500;
   }
 
   .btn {
