@@ -575,15 +575,6 @@ h1,
   line-height: 1.25;
 }
 
-.section {
-  min-height: 100vh;
-  width: 100%;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
 ::-webkit-scrollbar {
   width: 20px;
 }
@@ -596,6 +587,15 @@ h1,
 ::-webkit-scrollbar-track {
   --tw-bg-opacity: 1;
   background-color: rgb(9 9 11 / var(--tw-bg-opacity));
+}
+
+.section {
+  min-height: 100vh;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .navbar {
@@ -764,14 +764,40 @@ h1,
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+/* SERVICES SECTION */
+
+.services-container {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  width: 100%;
+  max-width: 80rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .services-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 .service-box {
   display: flex;
-  height: 600px;
+  min-height: 400px;
   cursor: pointer;
   align-items: center;
   justify-content: center;
   border-radius: 3rem;
-  border-width: 5px;
+  border-width: 3px;
   border-color: transparent;
   --tw-bg-opacity: 1;
   background-color: rgb(249 115 22 / var(--tw-bg-opacity));
@@ -781,8 +807,8 @@ h1,
 }
 
 .service-box:hover {
-  --tw-scale-x: 1.03;
-  --tw-scale-y: 1.03;
+  --tw-scale-x: 1.02;
+  --tw-scale-y: 1.02;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-border-opacity: 1;
   border-color: rgb(249 115 22 / var(--tw-border-opacity));
@@ -790,6 +816,15 @@ h1,
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(249 115 22 / var(--tw-text-opacity));
+  --tw-shadow: 0 0 20px #fb923c;
+  --tw-shadow-colored: 0 0 20px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 640px) {
+  .service-box {
+    min-height: 450px;
+  }
 }
 
 .service-info {
@@ -798,28 +833,52 @@ h1,
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 5rem;
+  padding: 1.5rem;
   text-align: center;
 }
 
+@media (min-width: 640px) {
+  .service-info {
+    padding: 2rem;
+  }
+}
+
 .service-info h4 {
-  margin: 0px;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 800;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+@media (min-width: 640px) {
+  .service-info h4 {
+    font-size: 2rem;
+  }
 }
 
 .service-info p {
-  font-size: 1.4rem;
-  font-weight: 600;
-  line-height: 1.7;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  line-height: 1.625;
 }
 
-.service-info .icon-large {
-  height: 5rem;
-  width: 5rem;
+@media (min-width: 640px) {
+  .service-info p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+.service-icon {
+  height: 4rem;
+  width: 4rem;
+}
+
+@media (min-width: 640px) {
+  .service-icon {
+    height: 5rem;
+    width: 5rem;
+  }
 }
 
 .projects-box {
@@ -1008,6 +1067,10 @@ h1,
   margin-bottom: 5rem;
 }
 
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -1022,10 +1085,6 @@ h1,
 
 .flex {
   display: flex;
-}
-
-.grid {
-  display: grid;
 }
 
 .aspect-square {
@@ -1056,10 +1115,6 @@ h1,
   cursor: pointer;
 }
 
-.grid-cols-\[repeat\(auto-fit\2c minmax\(300px\2c 1fr\)\)\] {
-  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -1078,10 +1133,6 @@ h1,
 
 .justify-between {
   justify-content: space-between;
-}
-
-.gap-10 {
-  gap: 2.5rem;
 }
 
 .gap-12 {
@@ -1207,11 +1258,6 @@ h1,
 
 .tracking-wide {
   letter-spacing: 0.025em;
-}
-
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-orange-500 {

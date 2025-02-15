@@ -18,10 +18,6 @@
     @apply font-orbitron font-bold leading-tight;
   }
 
-  .section {
-    @apply min-h-screen px-[5%] py-20 w-full;
-  }
-
   ::-webkit-scrollbar {
     @apply w-[20px];
   }
@@ -36,6 +32,10 @@
 }
 
 @layer components {
+  .section {
+    @apply min-h-screen px-[5%] py-20 w-full;
+  }
+
   .navbar {
     @apply fixed top-0 right-0 w-full min-h-screen 
      backdrop-blur-sm 
@@ -67,24 +67,30 @@
     @apply inline-flex items-center justify-center bg-transparent border-2 border-orange-500 text-orange-500 rounded-full p-5 transition-all duration-300 ease-in-out hover:scale-105 hover:text-gray-50 hover:bg-orange-500 hover:-translate-y-1 hover:shadow-[0_0_25px_#fb923c];
   }
 
+  /* SERVICES SECTION */
+
+  .services-container {
+    @apply w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4;
+  }
+
   .service-box {
-    @apply flex justify-center items-center bg-orange-500 h-[600px] rounded-[3rem] cursor-pointer border-[5px] border-transparent transition-all duration-[400ms] ease-in-out hover:bg-zinc-900 hover:text-orange-500 hover:border-orange-500 hover:scale-[1.03];
+    @apply flex justify-center items-center bg-orange-500 min-h-[400px] sm:min-h-[450px] cursor-pointer rounded-[3rem] border-[3px] border-transparent transition-all duration-[400ms] ease-in-out hover:bg-zinc-900 hover:text-orange-500 hover:border-orange-500 hover:scale-[1.02] hover:shadow-[0_0_20px_#fb923c];
   }
 
   .service-info {
-    @apply flex flex-col text-center justify-center items-center p-20 w-full;
+    @apply flex flex-col text-center justify-center items-center p-6 sm:p-8 w-full;
   }
 
   .service-info h4 {
-    @apply text-2xl m-0 my-8 font-extrabold;
+    @apply text-[1.8rem] sm:text-[2rem] font-bold my-6;
   }
 
   .service-info p {
-    @apply text-[1.4rem] font-semibold leading-[1.7];
+    @apply text-base sm:text-lg leading-relaxed;
   }
 
-  .service-info .icon-large {
-    @apply w-20 h-20;
+  .service-icon {
+    @apply w-16 h-16 sm:w-20 sm:h-20;
   }
 
   .projects-box {
