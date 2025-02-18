@@ -881,15 +881,6 @@ h1,
   }
 }
 
-.projects-box {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
-  row-gap: 5rem;
-}
-
 .project-card {
   display: flex;
   cursor: pointer;
@@ -1095,8 +1086,16 @@ h1,
   height: 3rem;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
 .w-12 {
   width: 3rem;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .w-\[min\(60vw\2c 280px\)\] {
