@@ -1450,9 +1450,9 @@ h1,
   padding-right: 5%;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .text-center {
@@ -1486,6 +1486,10 @@ h1,
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-\[clamp\(1\.5rem\2c 5vw\2c 3rem\)\] {
+  font-size: clamp(1.5rem,5vw,3rem);
 }
 
 .font-bold {
@@ -1585,6 +1589,13 @@ h1,
 
   .sm\:flex-row {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 
