@@ -36,23 +36,38 @@
     @apply min-h-screen px-[5%] py-20 w-full;
   }
 
+  /* Header */
+  .header {
+    @apply fixed w-full -top-0.5 py-4 md:py-6 px-[5%] bg-black/30 backdrop-blur-md flex justify-between items-center z-50;
+  }
+
   .navbar {
-    @apply fixed top-0 right-0 w-full min-h-screen 
-     backdrop-blur-sm 
-    flex flex-col items-center justify-center gap-12 
-    -translate-x-full transition-all duration-300 ease-in-out
+    @apply fixed top-0 right-0 w-full h-screen backdrop-blur-sm 
+    flex flex-col items-center justify-center gap-8 md:gap-12 -translate-x-full transition-all duration-300 ease-in-out
     lg:translate-x-0 lg:static lg:min-h-0 lg:w-auto lg:flex-row lg:bg-transparent lg:backdrop-blur-none;
   }
 
   .navbar.visible {
     @apply translate-x-0 flex flex-col items-center 
-    bg-black/80 backdrop-blur-sm 
+    bg-black/85 backdrop-blur-sm 
     absolute -top-0.5 left-0 w-full h-screen 
-    z-40 justify-center gap-8;
+    z-40 justify-center;
   }
 
   .nav-link {
-    @apply text-[1.6rem] font-medium transition-all duration-300 ease-in-out border-b-[3px] leading-relaxed tracking-wide uppercase  border-transparent hover:text-orange-500 hover:border-orange-500;
+    @apply relative
+           text-[1.4rem] md:text-[1.6rem]
+           font-medium uppercase tracking-wide
+           py-2 px-1
+           transition-all duration-300 ease-in-out
+           border-b-[3px] border-transparent
+           hover:text-orange-500 hover:border-orange-500
+           focus:outline-none focus:text-orange-500 focus:border-orange-500;
+  }
+
+  /* Active link style */
+  .nav-link[aria-current="page"] {
+    @apply text-orange-500 border-orange-500;
   }
 
   .btn {
@@ -224,10 +239,6 @@
 }
 
 @layer utilities {
-  .heading {
-    @apply font-orbitron font-semibold text-center text-white tracking-wide m-0 my-20;
-  }
-
   .text-gradient {
     @apply bg-[linear-gradient(270deg,#f97316_10%,#dc2626_100%)] bg-clip-text text-transparent;
   }

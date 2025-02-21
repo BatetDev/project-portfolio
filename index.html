@@ -18,9 +18,7 @@
   </head>
   <body class="bg-zinc-950 text-zinc-50">
     <!-- Header -->
-    <header
-      class="header fixed w-full -top-0.5 py-4 md:py-6 px-[5%] bg-black/30 backdrop-blur-md flex justify-between items-center z-50"
-    >
+    <header class="header">
       <!-- Logo -->
       <a
         href="#home"
@@ -30,16 +28,19 @@
         <span class="text-gradient">Batet</span>
       </a>
 
-      <!-- Hamburger Menu Icon (Visible on smaller screens) -->
-      <i
-        data-lucide="menu"
+      <!-- Hamburger Menu Icon -->
+      <button
+        type="button"
+        aria-label="Toggle menu"
         id="menu-icon"
-        class="w-12 h-12 lg:hidden cursor-pointer z-50 text-orange-500 hover:scale-110 transition-transform duration-300"
-      ></i>
+        class="lg:hidden relative z-50 p-2 text-orange-500 hover:text-orange-400 transition-all duration-300"
+      >
+        <i data-lucide="menu" class="w-10 h-10"></i>
+      </button>
 
-      <!-- Navigation Bar (Hidden on smaller screens, visible on lg and above) -->
-      <nav class="navbar" id="navbar">
-        <a href="#home" class="nav-link">Home</a>
+      <!-- Navigation -->
+      <nav class="navbar" id="navbar" aria-label="Main navigation">
+        <a href="#home" class="nav-link" aria-current="page">Home</a>
         <a href="#about" class="nav-link">About</a>
         <a href="#services" class="nav-link">Services</a>
         <a href="#projects" class="nav-link">Projects</a>
