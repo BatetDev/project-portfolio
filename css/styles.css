@@ -107,7 +107,7 @@
   /* SERVICES SECTION */
 
   .services-container {
-    @apply w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4;
+    @apply w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4;
   }
 
   .service-box {
@@ -115,19 +115,19 @@
   }
 
   .service-info {
-    @apply flex flex-col text-center justify-center items-center p-6 sm:p-8 w-full;
+    @apply flex flex-col text-center justify-center items-center p-4 sm:p-5 w-full;
   }
 
   .service-info h4 {
-    @apply text-[1.8rem] sm:text-[2rem] font-bold my-6;
+    @apply text-[1.8rem] sm:text-[2rem] font-bold my-5;
   }
 
   .service-info p {
-    @apply text-base sm:text-lg leading-relaxed;
+    @apply text-base sm:text-lg;
   }
 
   .service-icon {
-    @apply w-16 h-16 sm:w-20 sm:h-20;
+    @apply w-14 h-14 sm:w-[64px] sm:h-[64px] md:h-[72px] md:w-[72px];
   }
 
   /* PROJECTS SECTION */

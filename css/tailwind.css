@@ -895,7 +895,7 @@ h1,
   width: 100%;
   max-width: 80rem;
   grid-template-columns: repeat(1, minmax(0, 1fr));
-  gap: 2rem;
+  gap: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -955,19 +955,19 @@ h1,
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem;
+  padding: 1rem;
   text-align: center;
 }
 
 @media (min-width: 640px) {
   .service-info {
-    padding: 2rem;
+    padding: 1.25rem;
   }
 }
 
 .service-info h4 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
   font-size: 1.8rem;
   font-weight: 700;
 }
@@ -981,7 +981,6 @@ h1,
 .service-info p {
   font-size: 1rem;
   line-height: 1.5rem;
-  line-height: 1.625;
 }
 
 @media (min-width: 640px) {
@@ -992,14 +991,21 @@ h1,
 }
 
 .service-icon {
-  height: 4rem;
-  width: 4rem;
+  height: 3.5rem;
+  width: 3.5rem;
 }
 
 @media (min-width: 640px) {
   .service-icon {
-    height: 5rem;
-    width: 5rem;
+    height: 64px;
+    width: 64px;
+  }
+}
+
+@media (min-width: 768px) {
+  .service-icon {
+    height: 72px;
+    width: 72px;
   }
 }
 
@@ -1426,14 +1432,6 @@ h1,
   height: 1.5rem;
 }
 
-.h-8 {
-  height: 2rem;
-}
-
-.h-7 {
-  height: 1.75rem;
-}
-
 .w-10 {
   width: 2.5rem;
 }
@@ -1448,14 +1446,6 @@ h1,
 
 .w-full {
   width: 100%;
-}
-
-.w-8 {
-  width: 2rem;
-}
-
-.w-7 {
-  width: 1.75rem;
 }
 
 .max-w-lg {
@@ -1482,16 +1472,16 @@ h1,
   justify-content: center;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
 
 .gap-6 {
   gap: 1.5rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
 }
 
 .rounded-full {
