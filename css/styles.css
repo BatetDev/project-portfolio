@@ -107,7 +107,7 @@
   /* SERVICES SECTION */
 
   .services-container {
-    @apply w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4;
+    @apply w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6;
   }
 
   .service-box {
@@ -115,7 +115,7 @@
   }
 
   .service-info {
-    @apply flex flex-col text-center justify-center items-center p-4 sm:p-5 w-full;
+    @apply flex flex-col text-center justify-center items-center p-3 sm:p-5 w-full;
   }
 
   .service-info h4 {
