@@ -96,7 +96,7 @@
   }
 
   .about-img img {
-    @apply w-full rounded-full aspect-square object-cover;
+    @apply w-[min(60vw,280px)] md:w-[min(50vw,320px)] aspect-square object-cover rounded-full;
   }
 
   .about-content {

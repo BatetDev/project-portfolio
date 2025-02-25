@@ -861,10 +861,16 @@ h1,
 
 .about-img img {
   aspect-ratio: 1 / 1;
-  width: 100%;
+  width: min(60vw,280px);
   border-radius: 9999px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .about-img img {
+    width: min(50vw,320px);
+  }
 }
 
 .about-content {
@@ -1440,6 +1446,10 @@ h1,
 
 .w-\[min\(60vw\2c 280px\)\] {
   width: min(60vw,280px);
+}
+
+.w-\[min\(60vw\2c 80px\)\] {
+  width: min(60vw,80px);
 }
 
 .w-full {
