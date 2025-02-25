@@ -735,9 +735,13 @@ h1,
 }
 
 .btn {
-  display: inline-block;
+  display: flex;
   width: 100%;
+  max-width: 275px;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   text-wrap: nowrap;
   border-radius: 3rem;
   border-width: 2px;
@@ -746,9 +750,8 @@ h1,
   background-color: rgb(249 115 22 / var(--tw-bg-opacity));
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  text-align: center;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   font-size: 1.6rem;
   font-weight: 600;
   letter-spacing: 0.02em;
@@ -769,12 +772,6 @@ h1,
   --tw-shadow: 0 0 8px #fb923c,0 0 16px #fb923c;
   --tw-shadow-colored: 0 0 8px var(--tw-shadow-color), 0 0 16px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-@media (min-width: 640px) {
-  .btn {
-    width: auto;
-  }
 }
 
 .btn-primary {
@@ -1125,11 +1122,11 @@ h1,
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.75rem;
-  padding: 2rem;
+  gap: 1rem;
+  padding: 1.5rem;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 1024px) {
   .project-links {
     flex-direction: row;
   }
@@ -1420,10 +1417,6 @@ h1,
   display: flex;
 }
 
-.inline-flex {
-  display: inline-flex;
-}
-
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
@@ -1474,10 +1467,6 @@ h1,
 
 .justify-center {
   justify-content: center;
-}
-
-.gap-2 {
-  gap: 0.5rem;
 }
 
 .gap-4 {
@@ -1627,10 +1616,6 @@ h1,
 }
 
 @media (min-width: 640px) {
-  .sm\:w-auto {
-    width: auto;
-  }
-
   .sm\:flex-row {
     flex-direction: row;
   }

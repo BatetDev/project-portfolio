@@ -73,7 +73,20 @@
   }
 
   .btn {
-    @apply w-full sm:w-auto bg-orange-500 text-zinc-950 inline-block font-semibold text-[1.6rem] text-center py-3 px-6 rounded-[3rem] border-2 border-transparent tracking-[0.02em] cursor-pointer transition-all duration-300 ease-in-out text-nowrap shadow-[0_0_8px_#fb923c] hover:scale-[1.02] hover:shadow-[0_0_8px_#fb923c,0_0_16px_#fb923c];
+    @apply w-full max-w-[275px]
+           flex items-center justify-center gap-2
+           bg-orange-500 text-zinc-950 
+           font-semibold text-[1.6rem] 
+           py-3 px-5 
+           rounded-[3rem] 
+           border-2 border-transparent 
+           tracking-[0.02em] 
+           cursor-pointer 
+           transition-all duration-300 ease-in-out 
+           text-nowrap 
+           shadow-[0_0_8px_#fb923c] 
+           hover:scale-[1.02] 
+           hover:shadow-[0_0_8px_#fb923c,0_0_16px_#fb923c];
   }
 
   .btn-primary {
@@ -164,7 +177,7 @@
   }
 
   .project-links {
-    @apply flex flex-col sm:flex-row justify-center items-center gap-3 p-8;
+    @apply flex flex-col lg:flex-row justify-center items-center gap-4 p-6;
   }
 
   .projects-links .btn {
