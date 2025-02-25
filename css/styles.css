@@ -73,7 +73,7 @@
   }
 
   .btn {
-    @apply w-full sm:w-auto bg-orange-500 text-zinc-950 inline-block font-semibold text-[1.6rem] text-center py-3 px-6 rounded-[3rem] border-2 border-transparent tracking-wide cursor-pointer transition-all duration-300 ease-in-out text-nowrap shadow-[0_0_10px_#fb923c] hover:scale-[1.03] hover:shadow-[0_0_10px_#fb923c,0_0_20px_#fb923c];
+    @apply w-full sm:w-auto bg-orange-500 text-zinc-950 inline-block font-semibold text-[1.6rem] text-center py-3 px-6 rounded-[3rem] border-2 border-transparent tracking-[0.02em] cursor-pointer transition-all duration-300 ease-in-out text-nowrap shadow-[0_0_8px_#fb923c] hover:scale-[1.02] hover:shadow-[0_0_8px_#fb923c,0_0_16px_#fb923c];
   }
 
   .btn-primary {
@@ -133,7 +133,7 @@
   /* PROJECTS SECTION */
 
   .projects-container {
-    @apply w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 gap-y-12 px-4;
+    @apply w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 gap-y-12 px-1;
   }
 
   .project-card {
@@ -160,11 +160,11 @@
   }
 
   .project-description {
-    @apply text-base sm:text-lg leading-relaxed px-8 py-4 text-center;
+    @apply text-base sm:text-lg leading-relaxed px-6 py-4 text-center;
   }
 
   .project-links {
-    @apply flex flex-col sm:flex-row justify-center items-center gap-4 p-8;
+    @apply flex flex-col sm:flex-row justify-center items-center gap-3 p-8;
   }
 
   .projects-links .btn {
